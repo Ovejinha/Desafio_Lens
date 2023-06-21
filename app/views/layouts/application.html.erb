@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Galeria Hugo Riveros Gómez</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+	<%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+	<%= javascript_include_tag 'gallery' %>
+  </head>
+
+
+  	<body class="is-preload-0 is-preload-1 is-preload-2">
+
+	<!-- Main -->
+		<div id="main" >
+
+			<!-- Header -->
+			<header id="header">
+				<h1>Galeria</h1>
+				<h2 class="Hugo">Hugo Riveros</h2>
+				<p class="pincel">Tú Pincel sigue Pintando...</p>
+				<br>
+				<br>
+				<div class="d-flex">
+					<%= image_tag("hugoriveros.jpg", alt: "", width: "250", height: "400") %>
+					<p class="pincel">In Memorian 1953-1981</p>
+			<div>
+			<%= link_to "Galeria del Artista", galeria_artista_path, class: "boton" %>
+			</div>
+
+				</div>
+
+				<div class="Lista">
+					<ul class="icons">
+					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+			</header>
+
+   			<%= yield %>
+
+			</div>
+
+		<!-- Scripts -->
+		<%= javascript_include_tag 'jquery.min'%>
+		<%= javascript_include_tag 'browser.min'%>
+		<%= javascript_include_tag 'breakpoints.min'%>
+		<%= javascript_include_tag 'main'%>
+
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/db60f8ef17.js" crossorigin="anonymous"></script>
+
+
+	</body>
+</html>
